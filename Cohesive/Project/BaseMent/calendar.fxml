@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="897.0" prefWidth="1303.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BaseMent.calendarController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="68.0" style="-fx-background-color: #5f9ea0;">
+         <children>
+            <Button fx:id="BackBtn" mnemonicParsing="false" onAction="#BackBtnPressed" prefHeight="62.0" prefWidth="101.0" style="-fx-background-color: #5f9ea0;">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_back_arrow_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="897.0" prefWidth="1236.0">
+         <children>
+            <Label layoutX="14.0" layoutY="1.0" prefHeight="26.0" prefWidth="73.0" text="Calender">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <HBox layoutX="6.0" layoutY="27.0" prefHeight="35.0" prefWidth="84.0">
+               <children>
+                  <Button fx:id="UpBtn" mnemonicParsing="false" onAction="#UpBtnPressed" prefHeight="9.0" prefWidth="42.0">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_up_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="DownBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#DownBtnPressed" prefHeight="9.0" prefWidth="42.0">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_down_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  
+               </children>
+            </HBox>
+            <Pane layoutX="14.0" layoutY="121.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l1" layoutX="14.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Label layoutX="36.0" layoutY="71.0" prefHeight="26.0" prefWidth="73.0" text="Saturday">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="71.0" prefHeight="26.0" prefWidth="73.0" text="Sunday">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="717.0" layoutY="71.0" prefHeight="26.0" prefWidth="98.0" text="Wednesday">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="548.0" layoutY="71.0" prefHeight="26.0" prefWidth="98.0" text="Tuesday">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="382.0" layoutY="71.0" prefHeight="26.0" prefWidth="73.0" text="Monday">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="881.0" layoutY="71.0" prefHeight="26.0" prefWidth="73.0" text="Thursday">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="1045.0" layoutY="71.0" prefHeight="26.0" prefWidth="73.0" text="Friday">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Pane layoutX="185.0" layoutY="121.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l2" layoutX="18.0" layoutY="10.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="361.0" layoutY="121.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l3" layoutX="14.0" layoutY="16.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="539.0" layoutY="121.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l4" layoutX="14.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="696.0" layoutY="121.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l5" layoutX="16.0" layoutY="12.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="860.0" layoutY="121.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l6" layoutX="17.0" layoutY="13.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="1024.0" layoutY="121.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l7" layoutX="19.0" layoutY="15.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="280.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l8" layoutX="14.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="185.0" layoutY="280.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l9" layoutX="9.0" layoutY="13.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="361.0" layoutY="280.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l10" layoutX="14.0" layoutY="15.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="539.0" layoutY="280.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l11" layoutX="9.0" layoutY="15.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="696.0" layoutY="280.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l12" layoutX="16.0" layoutY="12.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="860.0" layoutY="280.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l13" layoutX="19.0" layoutY="13.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="1024.0" layoutY="280.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l14" layoutX="18.0" layoutY="17.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="603.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l22" layoutX="20.0" layoutY="11.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="185.0" layoutY="603.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l23" layoutX="11.0" layoutY="16.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="361.0" layoutY="603.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l24" layoutX="15.0" layoutY="10.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="539.0" layoutY="603.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l25" layoutX="9.0" layoutY="17.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="696.0" layoutY="603.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l26" layoutX="13.0" layoutY="16.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="860.0" layoutY="603.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l27" layoutX="12.0" layoutY="11.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="1024.0" layoutY="603.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l28" layoutX="20.0" layoutY="7.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="442.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l15" layoutX="14.0" layoutY="13.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="185.0" layoutY="442.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l16" layoutX="14.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="361.0" layoutY="442.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l17" layoutX="11.0" layoutY="12.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="539.0" layoutY="442.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l18" layoutX="14.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="696.0" layoutY="442.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l19" layoutX="14.0" layoutY="13.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="860.0" layoutY="442.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l20" layoutX="14.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="1024.0" layoutY="442.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l21" layoutX="10.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="764.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l29" layoutX="9.0" layoutY="13.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="185.0" layoutY="764.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l30" layoutX="25.0" layoutY="11.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="361.0" layoutY="764.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l31" layoutX="14.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="539.0" layoutY="764.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l32" layoutX="15.0" layoutY="15.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="696.0" layoutY="764.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l33" layoutX="22.0" layoutY="12.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="860.0" layoutY="764.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l34" layoutX="14.0" layoutY="12.0" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="1024.0" layoutY="764.0" prefHeight="90.0" prefWidth="125.0" style="-fx-border-color: #6495ed;">
+               <children>
+                  <Label fx:id="l35" layoutX="15.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <ComboBox fx:id="comboMnth" layoutX="1074.0" layoutY="27.0" onAction="#comboMnthchange" prefWidth="150.0" />
+            <Label fx:id="crntMnth" layoutX="109.0" layoutY="23.0" prefHeight="44.0" prefWidth="84.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="crntYear" layoutX="201.0" layoutY="23.0" prefHeight="44.0" prefWidth="136.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="yearInputField" layoutX="896.0" layoutY="27.0" onAction="#getYearinput" />
+            <Button fx:id="TodayBtn" layoutX="761.0" layoutY="17.0" mnemonicParsing="false" onAction="#TodayBtnPressed" prefHeight="45.0" prefWidth="108.0" text="Today">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_today_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

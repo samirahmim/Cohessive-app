@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #008b8b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BaseMent.ConverterFxmlController">
+  <children>
+      <Pane layoutX="229.0" layoutY="93.0" prefHeight="550.0" prefWidth="742.0">
+         <children>
+            <Label layoutX="64.0" layoutY="68.0" prefHeight="50.0" prefWidth="100.0" text="Type:" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="135.0" prefHeight="50.0" prefWidth="100.0" text="Unit 1:" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="196.0" prefHeight="50.0" prefWidth="100.0" text="Value:" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="264.0" prefHeight="50.0" prefWidth="100.0" text="Unit2:" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="TypeComboBox" layoutX="230.0" layoutY="68.0" onAction="#TypeComboBoxChanged" prefHeight="50.0" prefWidth="283.0" promptText="Select a Type" style="-fx-background-color: #5f9ea0;" />
+            <Label layoutX="64.0" layoutY="330.0" prefHeight="50.0" prefWidth="100.0" text="Result:" textFill="#fff2f2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Unit1ComboBox" layoutX="230.0" layoutY="135.0" onAction="#Unit1ComboChanged" prefHeight="50.0" prefWidth="283.0" promptText="Convert From" style="-fx-background-color: #5f9ea0;" />
+            <TextField fx:id="ValueTxtFld" layoutX="230.0" layoutY="196.0" onAction="#ValueTxtFldShow" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: #5f9ea0;" />
+            <ComboBox fx:id="Unit2ComboBox" layoutX="230.0" layoutY="264.0" onAction="#Unit2ComboChanged" prefHeight="50.0" prefWidth="283.0" promptText="Convert To" style="-fx-background-color: #5f9ea0;" />
+            <TextField fx:id="ResultTxtFld" layoutX="230.0" layoutY="330.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: #5f9ea0;" />
+            <Button fx:id="ShowResultBtn" layoutX="281.0" layoutY="409.0" mnemonicParsing="false" onAction="#ShowResultBtnClicked" prefHeight="54.0" prefWidth="181.0" style="-fx-background-color: #5f9ea0;" text="Show Result" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #5f9ea0;">
+         <children>
+            <Label layoutX="474.0" prefHeight="80.0" prefWidth="253.0" text="Unit Converter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBtn" layoutX="-3.0" layoutY="-2.0" mnemonicParsing="false" onAction="#backBtnPressed" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: #5f9ea0;" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="69.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_back_arrow_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

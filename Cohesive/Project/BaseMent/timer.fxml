@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" cacheShape="false" prefHeight="300.0" prefWidth="400.0" style="-fx-background-radius: 15;" stylesheets="@modena_dark.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BaseMent.Controller">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+        <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+        <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="198.66668446858725" minHeight="0.0" prefHeight="32.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="300.66666666666663" minHeight="101.99998219807941" prefHeight="268.0" vgrow="ALWAYS" />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane cache="true" cacheHint="QUALITY" prefHeight="302.0" prefWidth="400.0" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+            <children>
+                <HBox alignment="CENTER" cache="true" cacheHint="QUALITY" layoutX="5.0" layoutY="43.0" prefHeight="94.0" prefWidth="389.0">
+                    <children>
+                        <Label fx:id="secondsLabel" alignment="BOTTOM_CENTER" contentDisplay="CENTER" text="00:00" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI" size="77.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="millsLabel" alignment="CENTER" contentDisplay="CENTER" text="00" textAlignment="CENTER">
+                            <font>
+                                <Font name="Segoe UI" size="45.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Reflection fraction="0.54" topOpacity="0.39">
+                            <input>
+                                <Bloom threshold="0.93">
+                                    <input>
+                                        <Glow level="1.0" />
+                                    </input>
+                                </Bloom>
+                            </input>
+                        </Reflection>
+                    </effect>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="7.0" layoutY="188.0" prefHeight="68.0" prefWidth="389.0">
+                    <children>
+                        <ToggleButton fx:id="mainButton" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickMainButton" prefHeight="25.0" prefWidth="81.0" style="-fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #5f9ea0;" text="Start">
+                            <effect>
+                                <DropShadow color="#20d0d3" height="22.63" radius="10.9025" width="22.98">
+                                    <input>
+                                        <InnerShadow choke="0.33" color="#4fffdf" height="42.15" radius="20.7225" width="42.74" />
+                                    </input>
+                                </DropShadow>
+                            </effect>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                        </ToggleButton>
+                        <Pane prefHeight="68.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <ProgressIndicator fx:id="progressIndicator" focusTraversable="false" layoutY="19.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="219.0" visible="false">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <effect>
+                                        <Blend mode="ADD">
+                                            <topInput>
+                                                <Glow level="0.48">
+                                                    <input>
+                                                        <ColorAdjust brightness="1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
+                                                    </input>
+                                                </Glow>
+                                            </topInput>
+                                        </Blend>
+                                    </effect>
+                                </ProgressIndicator>
+                            </children>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Pane>
+                        <Button fx:id="resetButton" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickResetButton" prefHeight="25.0" prefWidth="81.0" style="-fx-background-radius: 7; -fx-border-radius: 7;" text="Reset">
+                            <HBox.margin>
+                                <Insets right="50.0" />
+                            </HBox.margin>
+                            <effect>
+                                <Bloom threshold="0.85" />
+                            </effect>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+            </children>
+        </AnchorPane>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="BackBtn" mnemonicParsing="false" onAction="#BackBtnPressed" prefHeight="36.0" prefWidth="49.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_back_arrow_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</GridPane>

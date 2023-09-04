@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #008b8b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BaseMent.MainMainController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@683723AA-532C-4597-A9B1-B843F0F89516.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="SignInBtn" alignment="CENTER" layoutX="489.0" layoutY="333.0" mnemonicParsing="false" onAction="#SignInBtnPressed" prefHeight="82.0" prefWidth="224.0" style="-fx-background-color: #CCCCFF;" text="Sign In">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="SignUpBtn" alignment="CENTER" layoutX="488.0" layoutY="471.0" mnemonicParsing="false" onAction="#SignUpBtnPressed" prefHeight="82.0" prefWidth="224.0" style="-fx-background-color: #CCCCFF;" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="ExitBtn" alignment="CENTER" layoutX="488.0" layoutY="605.0" mnemonicParsing="false" onAction="#ExitBtnPressed" prefHeight="82.0" prefWidth="224.0" style="-fx-background-color: #CCCCFF;" text="Exit">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Button>
+      <Button layoutX="385.0" layoutY="39.0" mnemonicParsing="false" prefHeight="106.0" prefWidth="433.0" style="-fx-background-color: #66b2b2;" text="COHESIVE">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
